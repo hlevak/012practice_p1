@@ -1,6 +1,7 @@
 /* Задание на урок:
 
-1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
+1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на 
+вопрос:
 'Сколько фильмов вы уже посмотрели?'
 
 2) Создать объект personalMovieDB и в него поместить такие свойства:
@@ -23,6 +24,32 @@
 
 'use strict';
 
+/* 1 */
 const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
 
 console.log (numberOfFilms);
+/* 2 */
+
+/* 2) Создать объект personalMovieDB и в него поместить такие свойства:
+
+ */
+let personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+    /*     - count - сюда передается ответ на первый вопрос
+    - movies - в это свойство поместить пустой объект
+    - actors - тоже поместить пустой объект
+    - genres - сюда поместить пустой массив
+    - privat - в это свойство поместить boolean(логическое) значение false
+ */
+};
+
+console.log (personalMovieDB.count, typeof (personalMovieDB.count));
+console.log (personalMovieDB.movies, typeof (personalMovieDB.movies));
+console.log (personalMovieDB.actors, typeof (personalMovieDB.actors));
+console.log (personalMovieDB.genres, typeof (personalMovieDB.genres));
+console.log (personalMovieDB.privat, typeof (personalMovieDB.privat));
+
