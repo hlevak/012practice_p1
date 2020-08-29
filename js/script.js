@@ -22,12 +22,12 @@
 
 Проверить, чтобы все работало без ошибок в консоли */
 
-'use strict';
+"use strict";
 
 /* 1 */
 const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", '');
 
-console.log (numberOfFilms);
+console.log ("Количество фильмов: ", numberOfFilms);
 /* 2 */
 
 /* 2) Создать объект personalMovieDB и в него поместить такие свойства:
@@ -41,11 +41,16 @@ let personalMovieDB = {
     privat: false
 };
 
-console.log (personalMovieDB.count, typeof (personalMovieDB.count));
-console.log (personalMovieDB.movies, typeof (personalMovieDB.movies));
-console.log (personalMovieDB.actors, typeof (personalMovieDB.actors));
-console.log (personalMovieDB.genres, typeof (personalMovieDB.genres));
-console.log (personalMovieDB.privat, typeof (personalMovieDB.privat));
+console.log ("personalMovieDB.count ", personalMovieDB.count, 
+    typeof (personalMovieDB.count));
+console.log ("personalMovieDB.movies ", personalMovieDB.movies, 
+    typeof (personalMovieDB.movies));
+console.log ("personalMovieDB.actors ", personalMovieDB.actors, 
+    typeof (personalMovieDB.actors));
+console.log ("personalMovieDB.genres", personalMovieDB.genres, 
+    typeof (personalMovieDB.genres));
+console.log ("personalMovieDB.privat", personalMovieDB.privat, 
+    typeof (personalMovieDB.privat));
 
 
 /* 3 */
@@ -60,14 +65,16 @@ const ansMovieName1 = 'logan',
 personalMovieDB.movies[ansMovieName1] = ansMovieScore1;
 personalMovieDB.movies[ansMovieName2] = ansMovieScore2;
  */
-console.log (personalMovieDB.movies);
+console.log ("personalMovieDB.movies: ", personalMovieDB.movies);
 
 
 
 
-// console.log (personalMovieDB.movies['logan'], typeof (personalMovieDB.movies['logan']) );
-// console.log (personalMovieDB.movies['5.1'], typeof (personalMovieDB.movies['5.1']) );
-/* 3) Задайте пользователю по два раза вопросы:
+/* console.log (personalMovieDB.movies['logan'], 
+    typeof (personalMovieDB.movies['logan']) );
+console.log (personalMovieDB.movies['5.1'], 
+    typeof (personalMovieDB.movies['5.1']) );
+ *//* 3) Задайте пользователю по два раза вопросы:
 - 'Один из последних просмотренных фильмов?'
 - 'На сколько оцените его?'
 Ответы стоит поместить в отдельные переменные
