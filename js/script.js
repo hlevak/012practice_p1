@@ -39,12 +39,6 @@ let personalMovieDB = {
     actors: {},
     genres: [],
     privat: false
-    /*     - count - сюда передается ответ на первый вопрос
-    - movies - в это свойство поместить пустой объект
-    - actors - тоже поместить пустой объект
-    - genres - сюда поместить пустой массив
-    - privat - в это свойство поместить boolean(логическое) значение false
- */
 };
 
 console.log (personalMovieDB.count, typeof (personalMovieDB.count));
@@ -53,3 +47,32 @@ console.log (personalMovieDB.actors, typeof (personalMovieDB.actors));
 console.log (personalMovieDB.genres, typeof (personalMovieDB.genres));
 console.log (personalMovieDB.privat, typeof (personalMovieDB.privat));
 
+
+/* 3 */
+/* const ansMovieName = prompt ('Один из последних просмотренных фильмов?');
+const ansMovieScore = +prompt ('На сколько оцените его?'); 
+ */
+const ansMovieName1 = 'logan',
+      ansMovieScore1 = '8.1',
+      ansMovieName2 = 'logan2',
+      ansMovieScore2 = '5.1';
+/* 
+personalMovieDB.movies[ansMovieName1] = ansMovieScore1;
+personalMovieDB.movies[ansMovieName2] = ansMovieScore2;
+ */
+console.log (personalMovieDB.movies);
+
+
+
+
+// console.log (personalMovieDB.movies['logan'], typeof (personalMovieDB.movies['logan']) );
+// console.log (personalMovieDB.movies['5.1'], typeof (personalMovieDB.movies['5.1']) );
+/* 3) Задайте пользователю по два раза вопросы:
+- 'Один из последних просмотренных фильмов?'
+- 'На сколько оцените его?'
+Ответы стоит поместить в отдельные переменные
+Записать ответы в объект movies в формате: 
+movies: {
+    'logan': '8.1'
+}
+ */
